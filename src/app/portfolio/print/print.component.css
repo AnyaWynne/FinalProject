@@ -1,0 +1,28 @@
+.container {
+    height: 100%;
+    /* background-repeat: no-repeat; */
+    background-size: 1200px;
+    /* opacity: .2; */
+    background: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+h1{
+    color: slategrey;
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+}
+
+img{
+    stroke: 1px solid slategrey;
+    box-shadow: slategrey;
+}

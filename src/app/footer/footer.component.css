@@ -1,0 +1,12 @@
+.container {
+    height: 100%;
+    /* opacity: .2; */
+    background:slategrey;
+    color: whitesmoke;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+}

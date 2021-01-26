@@ -1,0 +1,47 @@
+.container {
+    height: 100%;
+    /* opacity: .2; */
+    background: whitesmoke;
+    color: grey;
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-image: url('https://bn1302files.storage.live.com/y4pE5JbZ6CX4ocyRcerovWFIX-Z1PE9mMcjYX0iSKOxIb1lV3M_33awMTFq_hKEzNP8K3R1GekqyO2qjCuTqo0UAkHhLT-OjydUbz19fYHNaAbKa2NRqmt6rdvRyAo8mFY7GWhcC7Jn7_X0vo_q5UyTBh5asuhE4kPJMPqSyuIOOvtnq78bqUbuPInJDU_DIk3BHMC0AjiXT2eMJ31raKd00zREW7Z2ETm5UjzV_sNvZKo/contact.jpg?psid=1&width=617&height=311');
+}
+
+input {
+    padding: 3px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    /* margin-left: 5px; */
+}
+
+h1{
+    text-align: left; 
+    font-size: 80px;
+    /* font-display: ; */
+    color: rgb(155, 175, 192);
+    margin-left: 80px;
+    margin-top: 50px;
+ }
+
+ textarea {
+     margin-bottom: 8px;
+ }
+
+ label {
+     margin: 5px;
+     /* margin-right: 10px; */
+ }
+
+ button {
+     /* padding: 3px; */
+     margin-bottom: 28px;
+     /* box-shadow: black */
+    margin-left: 10px;
+ }
+
+ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+    border: 1px solid red;
+    background-color: burlywood;
+  }
+  

@@ -1,0 +1,43 @@
+.row {
+    /* background-color: lightsteelblue; */
+    padding: 5px;
+    font-size: large;
+    font-style: oblique;
+    font-weight: bold;
+    margin-top: 5px;
+}
+img {
+    border: 2px solid gray;
+    box-shadow: grey 3px 5px 6px;
+    margin-top: 5px;
+}
+.container {
+    height: 650px;
+    background-image: url('https://bn1302files.storage.live.com/y4peyznmSe4xWcLfGRX_apmvPod4Psj42bG6jJ_tWZ6G-XDZHCxqlk3ptcDVFrdaKQ7ThfAQKCy4BUt12B01QNd98T00km1l9TXA5DiW_od0zY7nPO1iQA4rFJuQ5r4L1dEvstn3x3QCNRdDalbWHAZo6XDTDvgfylpoMidbnefE7Bdt8hccZ9n5iru204BnzuatbbBzB2jh8cKuDzB6LhxqLgZpzHZD4KHNB9Z-t1gYeE/main.jpg?psid=1&width=1602&height=879');
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    /* opacity: .2; */
+    /* background: black; */
+    color: white;
+
+}
+
+.top-margin{
+    margin-top: 80px;
+}
+
+h2 {
+    font-size: medium;
+    color: lavender;
+    margin: 35px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+h1 {
+    margin: 30px;
+    margin-top: 0px;
+    font-size: 46px;
+    margin-left: 20px;
+
+}

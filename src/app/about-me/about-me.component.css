@@ -1,0 +1,62 @@
+.container {
+    height: 100%;
+    /* opacity: .2; */
+    background:slategrey;
+    color: whitesmoke;
+    background-image: url('https://bn1302files.storage.live.com/y4pUyTyw7JX36JTRXbdU-aXIlSTtMI2juomdX7lNt9p22HuPp1SDPvAgvCMS5UQXhUk-bvmL3xJ6IOQTjHg1wZdT0g8XoH__4pp5jVbDaAdnbtclkZisVitZDshSWHUwSF8WAMWWL_Ei779M5x7dDvDYHoUPCS6-tMTXxt0Gf-TqWMZGHf8w7xbVF0DW1M3ILkMj5D5mTrg8fumNqLoMF-dmGc9ukVYsmkGXPKPdho-9nI/about-me.jpg?psid=1&width=1137&height=879');
+    background-repeat: no-repeat;
+    background-size: 1200px;
+}
+table {
+    border: 1px solid whitesmoke;
+    width: 260px;
+    box-shadow: rgb(37, 36, 39) 3px 5px 6px;
+    /* padding: 100px; */
+    margin: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+.tableHight{
+  height: 240px;
+  padding: 10px;
+  text-align: left;
+
+}
+
+tr
+{
+  background-color: whitesmoke;
+  color: slategrey;
+  /* height: 60px; */
+  line-height: 26px;
+  font-size: 19px;
+  padding: 5px;
+}
+
+h1{
+  text-align: left; 
+  font-size: 130px;
+  /* font-display: ; */
+  color: rgb(197, 207, 216);
+  margin-left: 40px;
+  padding-top: 20px;
+  opacity: 0.75;
+}
+
+h2 {
+  font-size: 25px;
+  color: lavender;
+  margin-top: 40px;
+}
+
+p {
+ font-size: 16px;
+ color: lavender;
+ margin-top: 15px;
+ margin-bottom: 50px;
+}
+
+li {
+  margin-top: 8px;
+}
