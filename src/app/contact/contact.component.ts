@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +12,7 @@ export class ContactComponent implements OnInit {
 
   contactMeForm: FormGroup;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
 
@@ -24,7 +26,10 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log(this.contactMeForm);
+    this.http.post('https://http-practice-c8c72-default-rtdb.firebaseio.com/posts.json', 
+              this.contactMeForm.value).subscribe( post => {console.log(post.valueOf())});
+    console.log(this.contactMeForm.value);
+
   }
 
 }

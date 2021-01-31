@@ -1,6 +1,12 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ComponentFixture, TestBed, async, waitForAsync} from '@angular/core/testing';
 import { WebComponent } from './web.component';
+
+import { FetchService } from './fetch.service';
+
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {
+  HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
+
 
 describe('WebComponent', () => {
   let component: WebComponent;
@@ -8,7 +14,9 @@ describe('WebComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WebComponent ]
+      imports: [HttpClientTestingModule, HttpTestingController, HttpClientModule, HttpClient],
+      declarations: [ WebComponent ],
+      providers: [FetchService]
     })
     .compileComponents();
   });
@@ -19,9 +27,22 @@ describe('WebComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    let fixture = TestBed.createComponent(WebComponent);
-    let app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+  it('should create web component', async()=>{
+   
+      let app = fixture.debugElement;
+      expect(app).toBeTruthy();
+    
   });
+
 });
+
+// let fixture = TestBed.createComponent(WebComponent);
+// let app = fixture.debugElement;
+// expect(app).toBeTruthy();
+
+
+ // it('should create', () => {
+  //   // let fixture = TestBed.createComponent(WebComponent);
+  //   // let app = fixture.debugElement.componentInstance;
+  //   // expect(app).toBeTruthy();
+  // });

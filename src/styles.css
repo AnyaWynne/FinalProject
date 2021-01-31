@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Bodoni Moda');
+
+@import url('https://fonts.googleapis.com/css?family=Cardo');
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant SC');
+
+
+/* h1 {
+    font-family: 'Bodoni Moda';
+    font-family: 'Cardo';
+      /* font-family: 'Cinzel'; */
+    /* font-weight: bold; */
+    /* font-style: italic; */
+/* } */ 
+
+h1 {
+    /* font-family: 'Cormorant SC'; */
+    font-family: 'Cinzel';
+    letter-spacing: 2px;
+  
+}
+
+h3, h2, p {
+    font-family: 'Cormorant SC';
+    letter-spacing: 1px;
+}

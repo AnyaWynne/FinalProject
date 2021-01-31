@@ -1,10 +1,11 @@
 .row {
     /* background-color: lightsteelblue; */
+    
     padding: 5px;
     font-size: large;
     font-style: oblique;
     font-weight: bold;
-    margin-top: 5px;
+    /* margin-top: 1px; */
 }
 img {
     border: 2px solid gray;
@@ -30,14 +31,31 @@ h2 {
     font-size: medium;
     color: lavender;
     margin: 35px;
-    font-size: 20px;
+    font-size: 23px;
     margin-left: 20px;
+    /* text-shadow: 2px 2px 2px 2px black; */
+    text-shadow: 3px 2px black;
+
+
 }
 
 h1 {
     margin: 30px;
     margin-top: 0px;
-    font-size: 46px;
+    font-size: 42px;
     margin-left: 20px;
+    margin-right: 120px;
+    font-family: 'Cormorant SC';
+    letter-spacing: 3px;
+    font-style: normal;
+    text-shadow: 3px 2px black;
+
 
 }
+
+a, h2:hover {
+    font-weight: bold;
+    color: rgb(162, 183, 224);
+    font-size: 26px;
+    /* background-color: springgreen; */
+  }

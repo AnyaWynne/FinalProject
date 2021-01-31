@@ -15,10 +15,10 @@
                                     <label for="name">Name<br>
                                         <input formControlName="name" type="text" id="name">
                                     </label><br>
-                                    <span *ngIf="!contactMeForm.get('name').valid && contactMeForm.get('name').touched">Please enter your name</span>
+                                    <span *ngIf="!contactMeForm.get('name').valid && contactMeForm.get('name').touched"><nobr>Please enter your name</nobr></span>
                                     <label for="email">Email <br>
                                     <input formControlName="email" type="email" id="email"></label><br>
-                                    <span *ngIf="!contactMeForm.get('email').valid && contactMeForm.get('email').touched">Please enter valid email</span><br>
+                                    <span *ngIf="!contactMeForm.get('email').valid && contactMeForm.get('email').touched"><nobr>Please enter valid email</nobr></span><br>
                         
                                     <label for="message">Message</label>
  
@@ -28,7 +28,7 @@
 
                                  </div>
                             </div>
-                            <button class="btn btn-secondary" type="submit">Submit</button>
+                            <button [disabled]="!contactMeForm.valid" class="btn btn-secondary" type="submit">Submit</button>
                         </form>
                     </div>
                  

@@ -3,7 +3,7 @@
     /* opacity: .2; */
     background: whitesmoke;
     color: grey;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 1200px;
     background-image: url('https://bn1302files.storage.live.com/y4pE5JbZ6CX4ocyRcerovWFIX-Z1PE9mMcjYX0iSKOxIb1lV3M_33awMTFq_hKEzNP8K3R1GekqyO2qjCuTqo0UAkHhLT-OjydUbz19fYHNaAbKa2NRqmt6rdvRyAo8mFY7GWhcC7Jn7_X0vo_q5UyTBh5asuhE4kPJMPqSyuIOOvtnq78bqUbuPInJDU_DIk3BHMC0AjiXT2eMJ31raKd00zREW7Z2ETm5UjzV_sNvZKo/contact.jpg?psid=1&width=617&height=311');
 }
@@ -17,7 +17,7 @@ input {
 
 h1{
     text-align: left; 
-    font-size: 80px;
+    font-size: 70px;
     /* font-display: ; */
     color: rgb(155, 175, 192);
     margin-left: 80px;
@@ -42,6 +42,6 @@ h1{
 
  input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
     border: 1px solid red;
-    background-color: burlywood;
+    background-color:blanchedalmond;
   }
   

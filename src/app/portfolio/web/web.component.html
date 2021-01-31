@@ -1,13 +1,38 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>Web Development</h1>
+                <h1>{{title | uppercase}}</h1>
+                <h3>Fetch random photos of dogs with 'get' and open API</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <img [src]=items[0] width="300">
+                    </div>
+                    <div class="col-8">
+    <span>
+    In this simple tutorial we'll go over how to fetch data from an open API source and use it in Angular.
+    </span>                     
+        <h3 style="text-align:left;"> Step 1: fetch data with get method:</h3>
+                       <span>
+                        this.http.get('https://dog.ceo/api/breeds/image/random')
+                       </span>
+<h3 style="text-align:left;"> Step 2: Push the data in an array:</h3>
+<span>
+    {{codeSnippet}}<br>
+    Note: hasOwnProperty method checks if we successfully retrieved the data.
+</span>
+<h3 style="text-align:left;"> Step 3: Use data binding to access the url from the array:</h3>
+        <span>
+            {{codeSnippet2}}
+        </span>
+                    </div>
+                </div>
+                
                 <!-- <div *ngFor="let item of items">
                     <img [src]=item>
                     {{item}}
                 </div> -->
-                <h3>Fetch random photos of dogs with 'get' and open API</h3>
-                <img [src]=items[0] width="300">
+                
+                
                 
             </div>
         </div>

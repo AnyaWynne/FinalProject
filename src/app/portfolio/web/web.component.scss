@@ -5,6 +5,11 @@
     color: grey;
 } */ 
 
+$backColor: rgb(197, 230, 236);
+$myPadidng: 15px;
+$myFont: 'Cardo';
+$kerning: 1px;
+
 .container {
     height: 850px;
     /* background-image: url('https://bn1302files.storage.live.com/y4pdBuzVaBsnKJaYPzYm0R17sceLyK25LJb6Zy1b5jv0N9jV5STxgLWj8wjq02qOFuh9nHAgNMTq1lZoXAtysrrtzYNNpevXY3VfwuQ2VSUYiVXWNdcTp9PkfiuV3LfbaUUXLFVFN8zHkj95qq4a_hj_1sxnJlYZFP9c6ZYgW74nnV0hS8BtYBHlebB08o8OI03fCazdCfG-VmXL-PK0FHFDAXv1x0Kl5B5oz3KbhwYvuc/web-dev.jpg?psid=1&width=1137&height=879'); */
@@ -14,4 +19,36 @@
     /* background: black; */
     /* color: white; */
 
+}
+
+.row {
+    background-color: $backColor;
+    padding: $myPadidng;
+    align-items: center;
+}
+
+h1 {
+    // font-family: $myFont;
+    // font-style: italic;
+    font-size: 50px;
+    font-family: $myFont;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    letter-spacing: $kerning;
+    text-align: center;
+    font-size: 26px;
+}
+
+img {
+    border: 2px solid rgb(168, 182, 195);
+    box-shadow: grey 3px 5px 6px;
+    margin-top: 30px;
+    /* align-items: center; */
+}
+
+span {
+    font-size: 18px;
 }

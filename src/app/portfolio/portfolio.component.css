@@ -14,7 +14,7 @@ img {
 
 h1{
    text-align: left; 
-   font-size: 160px;
+   font-size: 120px;
    /* font-display: ; */
    color: rgb(197, 207, 216);
    margin-left: 30px;
@@ -22,8 +22,19 @@ h1{
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 30px;
     color: slategrey;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     margin-top: 10px;
 }
+
+a, h3:hover {
+    font-weight: bold;
+    color: rgb(121, 137, 189);
+    /* background-color: springgreen; */
+  }
+
+  img:hover {
+    border: 3px solid rgb(65, 79, 92);
+    width: 210px;
+  }

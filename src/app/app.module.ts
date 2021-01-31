@@ -19,7 +19,6 @@ import { PrintComponent } from './portfolio/print/print.component';
 import { PhotoComponent } from './portfolio/photo/photo.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ReferComponent } from './refer/refer.component';
-import { from } from 'rxjs';
 
 const appRoutes: Routes = [
   {path: '', component: LandingPageComponent },
