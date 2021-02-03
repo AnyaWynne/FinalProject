@@ -8,7 +8,8 @@ describe('WebComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      declarations: [WebComponent]
+      declarations: [WebComponent], 
+      providers: [FetchService]
     }).compileComponents();
   });
 
@@ -30,7 +31,18 @@ describe('WebComponent', () => {
     expect(compiled.querySelector('h3').textContent).toContain("Fetch random photos of dogs with 'get' and open API");
   });
 
- 
+  // it ('', 
+  // fakeAsync( ()=>{
+  //   let fixture = TestBed.createComponent(WebComponent);
+  //   let app = fixture.debugElement.componentInstance;
+  //   let fetchService = fixture.debugElement.injector.get(FetchService);
+  //   let spy = spyOn(fetchService, 'testService')
+  //     .and.returnValue(Promise.resolve(app.items)); //not sure what value to return, since I don't have access to whatever my API fetches.
+  //   fixture.detectChanges();
+  //   tick();
+  //   expect(app.items.length).toBe(1);
+  // })
+  // );
   
   });
 
@@ -51,18 +63,7 @@ describe('WebComponent', () => {
 //     })
 // );
 
-   // it ('', 
-  // fakeAsync( ()=>{
-  //   let fixture = TestBed.createComponent(WebComponent);
-  //   let app = fixture.debugElement.componentInstance;
-  //   let dataService = fixture.debugElement.injector.get(FetchService);
-  //   let spy = spyOn(dataService, 'getDetails')
-  //     .and.returnValue(Promise.resolve('Data'));
-  //   fixture.detectChanges();
-  //   tick();
-  //   expect(app.data).toBe('Data');
-  // })
-  // );
+ 
 
 
 
