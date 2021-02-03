@@ -31,7 +31,19 @@ describe('WebComponent', () => {
     expect(compiled.querySelector('h3').textContent).toContain("Fetch random photos of dogs with 'get' and open API");
   });
 
-  // it ('', 
+  it ('should test the content of the array fetched from the service', 
+  fakeAsync( ()=>{
+    let fixture = TestBed.createComponent(WebComponent);
+    let app = fixture.debugElement.componentInstance;
+    let fetchService = fixture.debugElement.injector.get(FetchService);
+    fixture.detectChanges();
+    expect(fetchService.urlSource[0]).toEqual(app.items[0]);
+  })
+  );
+  
+  });
+
+ // it ('', 
   // fakeAsync( ()=>{
   //   let fixture = TestBed.createComponent(WebComponent);
   //   let app = fixture.debugElement.componentInstance;
@@ -43,8 +55,8 @@ describe('WebComponent', () => {
   //   expect(app.items.length).toBe(1);
   // })
   // );
-  
-  });
+
+
 
 //   it('expects service to fetch data',
 //   inject([HttpTestingController, FetchService],

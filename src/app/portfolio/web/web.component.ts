@@ -22,6 +22,7 @@ export class WebComponent implements OnInit {
   ngOnInit(): void {
     // console.log(this.fetchData.urlSource);
     this.items = this.fetchData.urlSource;
+    // this.items = [0];
     this.codeSnippet = "this.http.get('https://dog.ceo/api/breeds/image/random').toPromise().then ( data =>" + "{" +
       "for (let key in data){" +
           "if (data.hasOwnProperty(key)){" +
