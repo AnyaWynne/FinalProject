@@ -19,7 +19,13 @@ describe('ReferComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create references component', () => {
     expect(component).toBeTruthy();
   });
+
+  it ('should render text in p tag', ()=>{
+    let compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('p').textContent).toContain('To Whom It May Concern');
+  });
+
 });

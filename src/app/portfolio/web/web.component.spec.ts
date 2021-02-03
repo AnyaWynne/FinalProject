@@ -1,73 +1,140 @@
-import { ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
-import { WebComponent } from './web.component';
+import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync, getTestBed } from '@angular/core/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
+import { WebComponent } from './web.component';
 import { FetchService } from './fetch.service';
 
-// import { HttpClient, HttpClientModule } from '@angular/common/http';
-// import {
-//   HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
-
-
 describe('WebComponent', () => {
-  // let component: WebComponent;
-  // let fixture: ComponentFixture<WebComponent>;
-
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      // imports: [HttpClientTestingModule, HttpTestingController, HttpClientModule, HttpClient],
-      declarations: [ WebComponent ]
-      // providers: [FetchService]
-    })
-    .compileComponents();
+      imports: [HttpClientTestingModule],
+      declarations: [WebComponent]
+    }).compileComponents();
   });
 
-  // beforeEach(() => {
-  //   fixture = TestBed.createComponent(WebComponent);
-  //   component = fixture.componentInstance;
-  //   fixture.detectChanges();
-  // });
-  it('should create the app', () => {
+  it('should create web component', () => {
     let fixture = TestBed.createComponent(WebComponent);
     let app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   });
+
+  it(`should have as title 'Web Development'`, () => {
+    let fixture = TestBed.createComponent(WebComponent);
+    let app = fixture.debugElement.componentInstance;
+    expect(app.title).toEqual('Web Development');
+  });
+
+  it ('should render text in h3 tag', ()=>{
+    let fixture = TestBed.createComponent(WebComponent);
+    let compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h3').textContent).toContain("Fetch random photos of dogs with 'get' and open API");
+  });
+
+ 
   
+  });
 
-});
-
-// it('should create web component', waitForAsync(()=>{
-//   let fixture = TestBed.createComponent(WebComponent);
-//   let app = fixture.debugElement.componentInstance;
-//   expect(app).toBeTruthy();
-
-// }) );
-
-
-
-// async()=>{
-   
-//   let app = fixture.debugElement;
-//   expect(app).toBeTruthy();
-
-// }
-
-
-// it(
-//   'should fetch data successfully if not called asynchronously',
-//   waitForAsync(() => {
-//     let fixture = TestBed.createComponent(UserComponent);
-//     let app = fixture.debugElement.componentInstance;
-//     let dataService = fixture.debugElement.injector.get(DataService);
-//     let spy = spyOn(dataService, 'getDetails').and.returnValue(
-//       Promise.resolve('Data')
-//     );
-//     fixture.detectChanges();
-//     fixture.whenStable().then(() => {
-//       expect(app.data).toBe('Data');
-//     });
-//   })
+//   it('expects service to fetch data',
+//   inject([HttpTestingController, FetchService],
+//     (httpMock: HttpTestingController, service: FetchService) => {
+//       // We call the service
+//       service.getAllContacts().subscribe(data => {
+//         expect(data.pageInfo.totalRecordCount).toBe(21);
+//         expect(data.pageInfo.pageNumber).toBe(0);
+//         expect(data.data.length).toBe(7);
+//       });
+//       // We set the expectations for the HttpClient mock
+//       const req = httpMock.expectOne('http://.../data/contacts');
+//       expect(req.request.method).toEqual('GET');
+//       // Then we set the fake data to be returned by the mock
+//       req.flush({data: ...});
+//     })
 // );
 
+   // it ('', 
+  // fakeAsync( ()=>{
+  //   let fixture = TestBed.createComponent(WebComponent);
+  //   let app = fixture.debugElement.componentInstance;
+  //   let dataService = fixture.debugElement.injector.get(FetchService);
+  //   let spy = spyOn(dataService, 'getDetails')
+  //     .and.returnValue(Promise.resolve('Data'));
+  //   fixture.detectChanges();
+  //   tick();
+  //   expect(app.data).toBe('Data');
+  // })
+  // );
+
+
+
+// import { ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+// import { WebComponent } from './web.component';
+
+// import { FetchService } from './fetch.service';
+
+// // import { HttpClient, HttpClientModule } from '@angular/common/http';
+// // import {
+// //   HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
+
+
+// describe('WebComponent', () => {
+//   // let component: WebComponent;
+//   // let fixture: ComponentFixture<WebComponent>;
+
+//   beforeEach(async () => {
+//     await TestBed.configureTestingModule({
+//       // imports: [HttpClientTestingModule, HttpTestingController, HttpClientModule, HttpClient],
+//       declarations: [ WebComponent ]
+//       // providers: [FetchService]
+//     })
+//     .compileComponents();
+//   });
+
+//   // beforeEach(() => {
+//   //   fixture = TestBed.createComponent(WebComponent);
+//   //   component = fixture.componentInstance;
+//   //   fixture.detectChanges();
+//   // });
+//   it('should create the app', () => {
+//     let fixture = TestBed.createComponent(WebComponent);
+//     let app = fixture.debugElement.componentInstance;
+//     expect(app).toBeTruthy();
+//   });
+  
+
+// });
+
+// // it('should create web component', waitForAsync(()=>{
+// //   let fixture = TestBed.createComponent(WebComponent);
+// //   let app = fixture.debugElement.componentInstance;
+// //   expect(app).toBeTruthy();
+
+// // }) );
+
+
+
+// // async()=>{
+   
+// //   let app = fixture.debugElement;
+// //   expect(app).toBeTruthy();
+
+// // }
+
+
+// // it(
+// //   'should fetch data successfully if not called asynchronously',
+// //   waitForAsync(() => {
+// //     let fixture = TestBed.createComponent(UserComponent);
+// //     let app = fixture.debugElement.componentInstance;
+// //     let dataService = fixture.debugElement.injector.get(DataService);
+// //     let spy = spyOn(dataService, 'getDetails').and.returnValue(
+// //       Promise.resolve('Data')
+// //     );
+// //     fixture.detectChanges();
+// //     fixture.whenStable().then(() => {
+// //       expect(app.data).toBe('Data');
+// //     });
+// //   })
+// // );
 
 
 
@@ -75,13 +142,14 @@ describe('WebComponent', () => {
 
 
 
-// let fixture = TestBed.createComponent(WebComponent);
-// let app = fixture.debugElement;
-// expect(app).toBeTruthy();
+
+// // let fixture = TestBed.createComponent(WebComponent);
+// // let app = fixture.debugElement;
+// // expect(app).toBeTruthy();
 
 
- // it('should create', () => {
-  //   // let fixture = TestBed.createComponent(WebComponent);
-  //   // let app = fixture.debugElement.componentInstance;
-  //   // expect(app).toBeTruthy();
-  // });
+//  // it('should create', () => {
+//   //   // let fixture = TestBed.createComponent(WebComponent);
+//   //   // let app = fixture.debugElement.componentInstance;
+//   //   // expect(app).toBeTruthy();
+//   // });

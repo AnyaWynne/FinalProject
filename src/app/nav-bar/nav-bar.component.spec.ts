@@ -36,5 +36,26 @@ describe('NavBarComponent', () => {
     getAttribute('routerLink')).toContain('/');
   });
 
+  it ('should render portfolio in span tag', ()=>{
+    let compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('span').textContent).toContain('portfolio');
+  });
+
+  it ('should render "web" in p tag', ()=>{
+    let compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('p').textContent).toContain('web');
+  });
+
+
+  // it ('should check if portfolio url is there', ()=>{
+  //   expect(fixture.debugElement.query(By.css('a')).nativeElement.
+  //   getAttribute('routerLink')).toContain('contact');
+  // });
+
+  // it ('should render about me in h2 tag', ()=>{
+  //   let compiled = fixture.debugElement.nativeElement;
+  //   expect(compiled.querySelector('h2').textContent).toContain('about me');
+  // });
+
 
 });
