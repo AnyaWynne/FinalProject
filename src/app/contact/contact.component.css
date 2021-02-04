@@ -44,4 +44,10 @@ h1{
     border: 1px solid red;
     background-color:blanchedalmond;
   }
+
+  p {
+      color: black;
+      text-shadow: 3px 2px rgb(255, 255, 255);
+
+  }
   

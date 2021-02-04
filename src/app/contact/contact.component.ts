@@ -10,6 +10,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
+  formSubmitted = false;
   contactMeForm: FormGroup;
 
   constructor(private http: HttpClient) { }
@@ -29,7 +30,8 @@ export class ContactComponent implements OnInit {
     this.http.post('https://http-practice-c8c72-default-rtdb.firebaseio.com/posts.json', 
               this.contactMeForm.value).subscribe( post => {console.log(post.valueOf())});
     console.log(this.contactMeForm.value);
-
+    this.contactMeForm.reset();
+    this.formSubmitted = true;
   }
 
 }
