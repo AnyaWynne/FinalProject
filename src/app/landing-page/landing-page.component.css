@@ -10,7 +10,7 @@
 img {
     /* border: 2px solid gray;
     box-shadow: grey 3px 5px 6px; */
-    margin-top: 5px;
+    margin-top: 0px;
 }
 .container {
     height: 650px;
@@ -24,7 +24,7 @@ img {
 }
 
 .top-margin{
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 h2 {
@@ -32,7 +32,7 @@ h2 {
     color: lavender;
     margin: 35px;
     font-size: 23px;
-    margin-left: 20px;
+    margin-left: 0px;
     /* text-shadow: 2px 2px 2px 2px black; */
     text-shadow: 3px 2px black;
 
@@ -40,10 +40,10 @@ h2 {
 }
 
 h1 {
-    margin: 30px;
-    margin-top: 0px;
+    /* margin: 30px; */
+    /* margin-top: 100px; */
     font-size: 42px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 120px;
     font-family: 'Cormorant SC';
     letter-spacing: 3px;
