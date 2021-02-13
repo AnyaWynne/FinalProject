@@ -30,7 +30,7 @@
                             </div>
                             <button [disabled]="!contactMeForm.valid" class="btn btn-secondary" type="submit">Submit</button>
                         </form>
-                        <p *ngIf="formSubmitted"><nobr> Thank you for contacting me. Your information has been submitted.</nobr> </p>
+                        <p *ngIf="formSubmitted && !contactMeForm.touched"><nobr> Thank you for contacting me. Your information has been submitted.</nobr> </p>
                     </div>
                  
                 </div>

@@ -26,3 +26,29 @@ img{
     stroke: 1px solid slategrey;
     box-shadow: slategrey;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  /* outline: black; */
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  background-image: none;
+  margin-top: 400px;
+
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 75px;
+  color: rgb(200, 202, 204);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 75px;
+  color: rgb(200, 202, 204)
+}

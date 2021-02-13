@@ -4,14 +4,16 @@
   height: 700px;
   align-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .row {
   align-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.carousel-wrapper {
+/* .carousel-wrapper {
   align-items: center;
     overflow: hidden;
     align-content: center;
@@ -27,19 +29,23 @@
   .carousel-inner {
     display: flex;
     align-items: center;
-  }
+  } */
 
   h1 {
     color:slategray;
     padding: 10px;
     opacity: .7;
     font-size: 37px;
+    text-align: center;
   }
 
   .center {
     align-content: center;
+    text-align: center;
   }
 
-  .col {
-    margin-left: 100px;
-  }
+  /* .col {
+    margin-left: 115px;
+  } */
+
+  
